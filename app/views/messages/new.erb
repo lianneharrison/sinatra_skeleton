@@ -14,13 +14,17 @@
     <label>Author:</label>
     <input type="text" name="author" value="<%= @message && @message.author %>">
   </div>
-  <div>
+<!--   <div>
     <label>Subject:</label>
     <input type="text" name="title" value="<%= @message && @message.title %>">
-  </div>
+  </div> -->
   <div>
     <label>Content:</label>
     <input type="text" name="content" value="<%= @message && @message.content %>">
+  </div>
+  <div>
+    <label>Add a URL (optional)</label>
+  <input type="text" name="url" value="<%= @message && @message.url %>">
   </div>
   <div>
     <input type="submit" value="Submit">
