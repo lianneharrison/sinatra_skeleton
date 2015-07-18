@@ -2,6 +2,8 @@
 
 <p>
   Author: <%= @message.author %>
+  <br>
+  <a href="/messages/by_author/<%= @message.author %>">Check all message from this author</a>
 </p>
 
 <p>
@@ -9,7 +11,7 @@
 </p>
 
 <p>
-  <a href="<%= @message.url %>"><%= @message.url %></a>
+  <a href="http://www.<%= @message.url %>"><%= @message.url %></a>
 </p>
 
 <p>
